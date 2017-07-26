@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <!--
+Create a simple HTML page with 8 images of equal width and height (you can use
+any image you like). When a particular image is clicked, have that image disappear.
+Also, include a button on the bottom of the page called 'Restore'. When the
+button is clicked, all images will appear.
+-->
+
+<head>
+  <meta charset="utf-8">
+  <title>JQuery Qualifying exam - assignment 1</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("img").click(function() {
+        $(this).hide();
+      });
+
+      $("button").click(function() {
+        $("img").show();
+      });
+
+    });
+  </script>
+  <link rel="stylesheet" href="master.css">
+</head>
+
+<body>
+  <h1> Click on ninja picture to make her disappear! </h1>
+    <br>
+  <div class="NinjaRow">
+    <div class="NinjaBox"><img src="th.jpeg" alt="Ninja 1" /></div>
+    <div class="NinjaBox"><img src="th.jpeg" alt="Ninja 1" /></div>
+    <div class="NinjaBox"><img src="th.jpeg" alt="Ninja 1" /></div>
+    <div class="NinjaBox"><img src="th.jpeg" alt="Ninja 1" /></div>
+    <div class="NinjaBox"><img src="th.jpeg" alt="Ninja 1" /></div>
+  </div>
+  <div class="NinjaRow">
+    <div class="NinjaBox"><img src="th.jpeg" alt="Ninja 1" /></div>
+    <div class="NinjaBox"><img src="th.jpeg" alt="Ninja 1" /></div>
+    <div class="NinjaBox"><img src="th.jpeg" alt="Ninja 1" /></div>
+    <div class="NinjaBox"><img src="th.jpeg" alt="Ninja 1" /></div>
+    <div class="NinjaBox"><img src="th.jpeg" alt="Ninja 1" /></div>
+  </div>
+  <br>
+  <button type="button" name="ResetNinjas">Restore Ninjas</button>
+</body>
+
+</html>

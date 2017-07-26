@@ -1,0 +1,22 @@
+
+.NinjaBox
+{
+    display: inline-block;
+
+    width: 140px;
+    height: 200px;
+    padding: 30px 20px;
+
+    vertical-align: top;
+
+    border: 5px solid black;
+}
+.Row
+{
+    display: block;
+}
+
+button {
+  padding : 260;
+  background-color : red;
+}
